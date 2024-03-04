@@ -21,13 +21,13 @@ public class Main {
 //        }
 
         Fraction fr= new Fraction(2,3);
-//        Fractionable num = Utils.cache(fr);
-//        num.doubleValue();// sout сработал
-//        num.doubleValue();// sout молчит
-//        num.doubleValue();// sout молчит
-//        num.setNum(5);
-//        num.doubleValue();// sout сработал
-//        num.doubleValue();// sout молчит
+        Fractionable num = Utils.cache(fr);
+        num.doubleValue();// sout сработал
+        num.doubleValue();// sout молчит
+        num.doubleValue();// sout молчит
+        num.setNum(5);
+        num.doubleValue();// sout сработал
+        num.doubleValue();// sout молчит
 
     }
 }
