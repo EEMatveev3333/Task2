@@ -1,10 +1,6 @@
 package org.example;
 
-interface Fractionable{
-    double doubleValue();
-    void setNum(int num) ;
-    void setDenum(int denum) ;
-}
+import java.util.Objects;
 
 public class Fraction implements Fractionable{
     private int num;

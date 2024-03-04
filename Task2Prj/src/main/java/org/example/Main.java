@@ -1,5 +1,9 @@
 package org.example;
 
+
+
+//import java.util.*;
+//import java.lang.ref.*;
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -17,13 +21,13 @@ public class Main {
 //        }
 
         Fraction fr= new Fraction(2,3);
-        Fractionable num =Utils.cache(fr);
-        num.doubleValue();// sout сработал
-        num.doubleValue();// sout молчит
-        num.doubleValue();// sout молчит
-        num.setNum(5);
-        num.doubleValue();// sout сработал
-        num.doubleValue();// sout молчит
+//        Fractionable num = Utils.cache(fr);
+//        num.doubleValue();// sout сработал
+//        num.doubleValue();// sout молчит
+//        num.doubleValue();// sout молчит
+//        num.setNum(5);
+//        num.doubleValue();// sout сработал
+//        num.doubleValue();// sout молчит
 
     }
 }
