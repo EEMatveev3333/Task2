@@ -1,6 +1,7 @@
 package org.example;
 
-import java.util.Objects;
+//import java.util.Objects;
+import java.lang.annotation.*;
 
 public class Fraction implements Fractionable{
     private int num;
