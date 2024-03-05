@@ -1,8 +1,11 @@
 package org.example;
 
 //import java.util.Objects;
+import jdk.jfr.Description;
+
 import java.lang.annotation.*;
 
+import jdk.jfr.Description;
 public class Fraction implements Fractionable{
     private int num;
     private int denum;
@@ -12,18 +15,21 @@ public class Fraction implements Fractionable{
         this.denum = denum;
     }
 
-    @Mutator
+    @Mutator()
+    @Description("the power of an engine")
     public void setNum(int num) {
         this.num = num;
     }
 
-    @Mutator
+    @Mutator()
+    @Description("the power of an engine")
     public void setDenum(int denum) {
         this.denum = denum;
     }
 
     @Override
-    @Cache
+    @Cache()
+    @Description("the power of an engine")
     public double doubleValue() {
         System.out.println("invoke double value");
         return (double) num/denum;

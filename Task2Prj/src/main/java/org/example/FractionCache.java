@@ -14,8 +14,8 @@ public class FractionCache implements Fractionable{
 
     public double doubleValue(){
         if (isChanged) tmp = fraction.doubleValue();
-        else
-            System.out.println("tmp double value");
+        //       else
+        //    System.out.println("tmp double value");
         isChanged = false;
         return tmp;
     };
