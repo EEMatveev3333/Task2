@@ -8,11 +8,15 @@ public class FractionCache implements Fractionable{
     double tmp;
 
     public FractionCache(Fraction fraction) {
+        isChanged = true;
         this.fraction = fraction;
     }
 
     public double doubleValue(){
         if (isChanged) tmp = fraction.doubleValue();
+        else
+            System.out.println("tmp double value");
+        isChanged = false;
         return tmp;
     };
 
@@ -25,4 +29,8 @@ public class FractionCache implements Fractionable{
         fraction.setDenum(denum);
         isChanged = true;
     };
+
+    public void setFraction(Fraction fraction) {
+        this.fraction = fraction;
+    }
 }
