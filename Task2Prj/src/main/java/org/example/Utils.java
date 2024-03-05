@@ -43,7 +43,7 @@ public class Utils{
         //Вызываем у прокси объекта один из методов нашего оригинального объекта
         proxyObj.introduce(vasia.getName());
 
-        return t;
+        return proxyObj;
     }
 
     //    static <T> void add(List<T> list, T t) {
