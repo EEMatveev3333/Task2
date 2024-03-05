@@ -6,27 +6,7 @@ import java.lang.reflect.Proxy;
 
 public class Utils{
 
-    public class PersonInvocationHandler<T>implements InvocationHandler {
-        //private Person person;
 
-        // Маркер изменений, устанавливается в true Mutable методами, сбрасывается в false Cache методами, по усолчанию для пересчета = true
-        boolean isChanged = true;
-
-        // Универсальный объект
-        private T uniObj;
-
-        // Конструктор
-        public PersonInvocationHandler(T t) {
-            this.uniObj = t;
-        }
-
-        @Override
-        public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-            System.out.println("Перевызов из под прокси!");
-            return method.invoke(this.uniObj, args);
-        }
-
-    }
 
     static <T> T cache(T t) {
         //list.add(t);
@@ -41,7 +21,7 @@ public class Utils{
         T proxyObj = (T) Proxy.newProxyInstance(UniClassLoader, interfaces, new PersonInvocationHandler(t));
 
         //Вызываем у прокси объекта один из методов нашего оригинального объекта
-        proxyObj.introduce(vasia.getName());
+        //proxyObj.introduce(vasia.getName());
 
         return proxyObj;
     }
