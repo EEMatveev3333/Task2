@@ -37,9 +37,9 @@ public class Main {
             }
             return res;
         }*/
-        System.out.println("Лог выполнения");
+/*        System.out.println("Лог выполнения");
 
-        Fraction fr = new Fraction(2,3);
+        Fraction fr = new Fraction(2,3);*/
 /*        System.out.println("Лог выполнения");
         System.out.println(Arrays.toString(Fraction.class.getDeclaredFields()));
         //System.out.println(Fraction.class.getField("num"));
@@ -83,15 +83,21 @@ public class Main {
         //--- Тестовый пример
         //Class clazz = Fraction.class;
         //
-        System.out.println("===!");
-        Fractionable num = Utils.cache(fr);
-        System.out.println("            " + String.valueOf(num.doubleValue()));// sout сработал
-        System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
-        System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
-        num.setNum(5);
-        System.out.println("            " + String.valueOf(num.doubleValue()));// sout сработал
-        System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
-        System.out.println("===!");
+
+
+//        System.out.println("Лог выполнения");
+//
+//        Fraction fr = new Fraction(2,3);
+//
+//        System.out.println("===!");
+//        Fractionable num = Utils.cache(fr);
+//        System.out.println("            " + String.valueOf(num.doubleValue()));// sout сработал
+//        System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
+//        System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
+//        num.setNum(5);
+//        System.out.println("            " + String.valueOf(num.doubleValue()));// sout сработал
+//        System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
+//        System.out.println("===!");
 
 
     }

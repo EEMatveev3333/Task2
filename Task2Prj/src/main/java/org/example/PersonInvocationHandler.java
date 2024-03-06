@@ -15,7 +15,7 @@ public class PersonInvocationHandler<T>implements InvocationHandler {
     private T uniObj;
 
     //Objects tmp;
-    HashMap<String, Object> ObjectsCache = new HashMap<>();
+    public HashMap<String, Object> ObjectsCache = new HashMap<>();
 
     // Конструктор
     public PersonInvocationHandler(T t) {
