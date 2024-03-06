@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 
 public class Utils{
 
-
+    static PersonInvocationHandler referPersonInvocationHandler;
 
     static <T> T cache(T t) {
         //list.add(t);
@@ -17,8 +17,15 @@ public class Utils{
         //Получаем все интерфейсы, которые реализует оригинальный объект
         Class[] interfaces = t.getClass().getInterfaces();
 
+        // For test
+        PersonInvocationHandler refPersonInvocationHandler = new PersonInvocationHandler(t);
+
+        referPersonInvocationHandler = refPersonInvocationHandler;
+        // For test
+
         //Создаем прокси нашего объекта vasia
-        T proxyObj = (T) Proxy.newProxyInstance(UniClassLoader, interfaces, new PersonInvocationHandler(t));
+        //T proxyObj = (T) Proxy.newProxyInstance(UniClassLoader, interfaces, new PersonInvocationHandler(t));
+        T proxyObj = (T) Proxy.newProxyInstance(UniClassLoader, interfaces, refPersonInvocationHandler);
 
         //Вызываем у прокси объекта один из методов нашего оригинального объекта
         //proxyObj.introduce(vasia.getName());

@@ -66,9 +66,11 @@ class MainTest {
         Fractionable num = Utils.cache(fr);
         System.out.println("            " + String.valueOf(num.doubleValue()));// sout сработал
         System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
-//        Искуствено меняем содержимое кэша на другое число
-        PersonInvocationHandler CacheCrusher;// = (PersonInvocationHandler)num;
-
+        assertEquals(String.valueOf(num.doubleValue()), String.valueOf(2.0/3.0));
+        //        Искуствено меняем содержимое кэша на другое число
+        double test_val = 0.25;
+        Utils.referPersonInvocationHandler.ObjectsCache.put("doubleValue",(Object)test_val);
+        assertEquals(String.valueOf(num.doubleValue()), String.valueOf(test_val));
 
         System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
         num.setNum(5);
