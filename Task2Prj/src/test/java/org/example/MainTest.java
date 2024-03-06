@@ -69,6 +69,7 @@ class MainTest {
 //        Искуствено меняем содержимое кэша на другое число
         PersonInvocationHandler CacheCrusher;// = (PersonInvocationHandler)num;
 
+
         System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
         num.setNum(5);
         System.out.println("            " + String.valueOf(num.doubleValue()));// sout сработал
