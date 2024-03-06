@@ -24,23 +24,23 @@ public class Main {
 
         Fractionable num1 = frC;
         System.out.println("===!");
-        num1.doubleValue();// sout сработал
-        num1.doubleValue();// sout молчит
-        num1.doubleValue();// sout молчит
+        System.out.println("            " + String.valueOf(num1.doubleValue()));// sout сработал
+        System.out.println("            " + String.valueOf(num1.doubleValue()));// sout молчит
+        System.out.println("            " + String.valueOf(num1.doubleValue()));// sout молчит
         num1.setNum(5);
-        num1.doubleValue();// sout сработал
-        num1.doubleValue();// sout молчит
+        System.out.println("            " + String.valueOf(num1.doubleValue()));// sout сработал
+        System.out.println("            " + String.valueOf(num1.doubleValue()));// sout молчит
         //--- Тестовый пример
         //Class clazz = Fraction.class;
         //
         System.out.println("===!");
         Fractionable num = Utils.cache(fr);
-        num.doubleValue();// sout сработал
-        num.doubleValue();// sout молчит
-        num.doubleValue();// sout молчит
+        System.out.println("            " + String.valueOf(num.doubleValue()));// sout сработал
+        System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
+        System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
         num.setNum(5);
-        num.doubleValue();// sout сработал
-        num.doubleValue();// sout молчит
+        System.out.println("            " + String.valueOf(num.doubleValue()));// sout сработал
+        System.out.println("            " + String.valueOf(num.doubleValue()));// sout молчит
         System.out.println("===!");
 
 
