@@ -1,6 +1,5 @@
 package org.example;
 
-//import java.util.Objects;
 import jdk.jfr.Description;
 
 import java.lang.annotation.*;
@@ -16,20 +15,17 @@ public class Fraction implements Fractionable{
     }
 
     @Mutator()
-    @Description("the power of an engine")
     public void setNum(int num) {
         this.num = num;
     }
 
     @Mutator()
-    @Description("the power of an engine")
     public void setDenum(int denum) {
         this.denum = denum;
     }
 
     @Override
     @Cache()
-    @Description("the power of an engine")
     public double doubleValue() {
         System.out.println("invoke double value");
         return (double) num/denum;
